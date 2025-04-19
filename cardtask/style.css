@@ -1,0 +1,63 @@
+.cards{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+.card{
+    width: 315px;
+    height: 200px;
+    background-color: #8e44ad;
+    color: white;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin: 10px;
+}
+#number{
+    font-size: 25px;
+    margin-top: -5px;
+    font-weight: 200;
+}
+#chip{
+    width: 50px;
+    padding-top: 35px;
+    margin-left: -5px;
+}
+#name{
+    padding-bottom: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -20px;
+}
+.blnk{
+    display: flex;
+    justify-content: space-between;
+}
+#visa{
+    width: 100px;
+    height: 35px;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+#valid{
+    font-size: smaller;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -20px;
+}
+#date{
+    margin-top: -15px;
+}
+
+.card:nth-child(2) {
+    background-color: #009432;
+}
+
+.card:nth-child(3) {
+    background-color: #0652DD;
+}
+
+.card:nth-child(4) {
+    background-color: #161617;
+}
