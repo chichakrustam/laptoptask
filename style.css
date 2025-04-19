@@ -1,37 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.menu{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+.laptop{
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 5px;
+    padding-top: 20px;
+    width: 450px;
+    padding-left: 20px;
+    
+}
+.by{
+    margin-top: -20px;
+}
+#lp2{
+    width: 400px ;
+    height: 300px;
+    padding-block: 35px;
+}
+#lp1{
+    width: 38ßpx ;
+    height: 370px;
+}
 
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 230px;
-    margin-right: 230px;
-}
-h1{
-    font-size: x-large;
-    font-weight: 900;
-}
-table{
-    background-color: #f0fff8;
-    width: 100%;
-    border-collapse: collapse;
-} 
-td{
-    padding: 10px;
-    border: 1px solid;
-    border-color: rgb(45, 197, 197);
-}
-p{
-    background-color: #f0fff8;
-    padding: 30px;
-    border: 1px solid rgb(45, 197, 197);
-    border-radius: 10px;
-}
-h3{
-    font-weight: 900;
+.price{
+    color: rgb(167, 89, 29);
 }
 ul{
-    background-color: #f0fff8;
-    padding: 30px;
-    border: 1px solid rgb(45, 197, 197);
-    border-radius: 10px;
+    list-style-type: none;
+    background-color: rgb(232, 227, 227);
+    padding-block: 20px;
+    padding-inline: 20px;
+    margin-right: 20px;
+}
+.Buy{
+    display: flex;
+    color: blueviolet;
+    font-weight: bold;
+    gap: 10px;
+    
+}
+.back{
+    font-style: italic;
+    font-size: small;
+}
+:hover .Buy{
+    cursor: pointer;
+}
+:hover .back{
+    cursor: pointer;
 }
