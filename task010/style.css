@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    height: 55px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 25px 100px;
+    justify-content: center;
+    
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+    margin: 15px 30px 20px 30px;
+    
+}
+footer{
+    height: 45px;
+    width: 80%;
+    background-color: plum;
+    margin: 50px auto;
+    border-radius: 10px;
+}
