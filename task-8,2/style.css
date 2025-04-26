@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif ;
+    color: #777777;
+    padding-inline: 80px;
+    padding-block: 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 50px;
+    h2{
+        font-family: "Oswald", sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 10px;
+    }
+    p{
+        color: #777777;
+    }
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.box{
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    padding-inline: 25px;
+    padding-block: 40px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    &:hover{
+        box-shadow: 15px 0 30px rgb(236, 235, 235);
+    }
+    h4{
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 15px;
+    }
+    p{
+        color: #777;
+        font-size: 14px;
+    }
+
+}
+    
+.box img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
