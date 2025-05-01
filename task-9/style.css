@@ -62,10 +62,6 @@ header{
                 font-size: 18px;
                 background-color: rgb(76, 76, 76);
                 border-radius: 50%;
-                i{
-                    margin: 0;
-                    padding: 0;
-                }
             }
         }  
 }
