@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 450px;
+    height: 300px;  
+    border: 1px solid rgb(89, 89, 89);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    width: 450px;
+    height: 300px;  
+    object-fit: cover;
+}
+
+
+.front, .back{
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: transform 1s ease;
+}
+
+.front{
+    transform: translateX(0);
+    z-index: 2;
+}
+
+
+.back{
+    z-index: 1;
+    padding: 10px;
+    background-color: white;
+    transform: translateX(0);
+    backface-visibility: hidden;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content:hover .front{
+    transform: translateX(-105%);
+}
