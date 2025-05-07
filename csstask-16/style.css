@@ -1,7 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #1a9ac9;
+}
+
 img{
     width: 250px;
     height: 150px;
+    border: 1px solid white;
 }
+
+.header{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    margin-bottom: -100px;
+    margin-top: 100px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .photos{
+    height: 100vh;
     display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 150px);
+    row-gap: 1px;
+    column-gap: 1px;
+}
+
+.left{
+    animation-name: animleft;
+    animation-delay: 1s;
+    animation-duration: 3s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animleft {
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(-250px, 0);
+    }
+}
+
+.top{
+    animation-name: animtop;
+    animation-delay: 1s;
+    animation-duration: 3s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes animtop {
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(0, -150px);
+    }
+}
+
+.bottom{
+    animation-name: animbottom;
+    animation-delay: 1s;
+    animation-duration: 3s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes animbottom {
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(0, 150px);
+    }
+}
+
+.top2{
+    animation-name: animtop2;
+    animation-delay: 1s;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes animtop2 {
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(0, -300px);
+    }
+}
+
+.rightbottom{
+    animation-name: animrightbottom;
+    animation-delay: 1s;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes animrightbottom {
+    0%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(250px, 0);
+    }
+    100%{
+        transform: translate(250px, 150px);
+    }
+}
+
+.bottomright{
+    animation-name: animbottomright;
+    animation-delay: 1s;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes animbottomright {
+    0%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(0, 150px);
+    }
+    100%{
+        transform: translate(250px, 150px);
+    }
 }
