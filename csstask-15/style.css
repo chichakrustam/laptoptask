@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+
+.content{
+    height: 300px;  
+    width: 200px;
+    margin-top: 100px; 
+    margin-inline: 540px;
+    position: relative;
+}
+
+.photos{
+    position: relative;
+    height: 300px;  
+    width: 200px;
+    background-color: rgb(138, 186, 66); 
+    border-radius: 30px;
+    overflow: hidden; 
+}
+
+.img1, .img2{
+    height: 300px;  
+    width: 200px;
+    overflow: hidden;
+    border-radius: 30px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s ease;
+    }
+
+.img2{
+        z-index: 2;
+        transform: translateY(0) scale(1);
+    }
+
+.img2{
+    z-index: 1;
+    transform: translateY(100%) scale(0.8);
+}
+
+
+.photos:hover .img1{
+    transform: translateY(-100%) scale(0.5);
+    opacity: 85%;
+}
+.photos:hover .img2{
+    transform: translateY(0) scale(1);
+}
+
+
+
+.img1:hover{
+        transform: translateY(-100%) scale(0.5);
+        transition: transform 1.5s;
+        overflow: hidden;
+        border-radius: 0;
+}
+
+.img2:hover{
+        transform: translateY(0) scale(1);
+        transition: transform 1.5s;
+        overflow: hidden;
+        border-radius: 0;
+}
+
+
+
+.box1, .box2{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.box1{
+    background-color: greenyellow;
+    z-index: 2;
+    animation-name: anim;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.box2{
+    background-color: red;
+    z-index: 1;
+    animation-name: anim2;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anim {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    25%{
+        transform: translate(160px, 0);
+        border-radius: 13px;
+    }
+    50%{
+        transform: translate(160px, 260px);
+        border-radius: 20px;
+    }
+    75%{
+        transform: translate(0, 260px);
+        border-radius: 20px;
+    }
+    77%{
+        border-radius: 0%;
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes anim2 {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    25%{
+        transform: translate(0, 260px);
+    }
+    50%{
+        transform: translate(160px, 260px);
+        z-index: 3;
+    }
+    75%{
+        transform: translate(160px, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
