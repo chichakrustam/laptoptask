@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    width: 300px;  
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 128);
+    border: black solid 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second{
+    width: 200px;  
+    height: 200px;
+    border-radius: 50%;
+    background-color: blue;
+    border: red solid 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three{
+    width: 100px;  
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(138, 209, 30);
+    border: rgb(213, 72, 119) solid 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
