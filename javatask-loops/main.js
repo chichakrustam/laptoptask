@@ -88,6 +88,40 @@ console.log(sum);
 
 // ###Task-06
 
+for (let n=75; n>1; n--) {
+let cnt=0;
+for (let j=n;j>0; j--){
+  if (!(n%j)) {
+    cnt++;
+  }
+}
+if (cnt===2) {
+  console.log(n);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -133,7 +167,7 @@ let text = prompt("Bir metn daxil edin:");
 let hasNumber = false;
 
 for (let i = 0; i < text.length; i++) {
-  if (text[i] >= '0' && text[i] <= '9') {
+  if (text[i] >= '0' && text[i] <= '9' && text[i]!=" ") {
     hasNumber = true;
     break;
   }
@@ -144,3 +178,33 @@ if (hasNumber) {
 } else {
   console.log("Metnde reqem yoxdur.");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let n=prompt("0≤n≤2⋅10^9 araliginda bir eded daxil edin: ");
+console.log(n.length);
+// while (i<n.length){
+//   console.log(n[i]);
+//     i++;
+// }
